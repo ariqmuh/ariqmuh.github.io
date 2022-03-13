@@ -27,7 +27,101 @@ mathjax: "true"
 
 <p><img src="https://i.imgur.com/HRhd2Y0.png" alt="Data Scheme"><p/>
 
-
+<p>Attribute Information:<p/>
+   <table>
+  <tr>
+    <th>Attribute</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Unit Analysis</th>
+  </tr>
+  <tr>
+    <td>order_id</td>
+    <td>object</td>
+    <td>Unik ID dari order</td>
+    <td>Setiap baris merepresentasikan ID order yang yang muncul ketika customer
+    melakukan order</td>
+  </tr>
+  <tr>
+    <td>order_purchase_stamp</td>
+    <td>datetime64[s]</td>
+    <td>Waktu pembelian customer</td>
+    <td>Setiap baris merepresentasikan waktu ketika customer melakukan order</td>
+  </tr>
+  <tr>
+    <td>order_item_id</td>
+    <td>float64</td>
+    <td>Jumlah barang per-order</td>
+    <td>Setiap baris merepresentasikan jumlah barang yang dibeli customer dalam sekali order</td>
+  </tr>
+  <tr>
+    <td>product_id</td>
+    <td>object</td>
+    <td>ID dari sebuah product</td>
+    <td>Setiap baris merepresentasikan ID dari sebuah product yang diorder oleh customer</td>
+  </tr>
+  <tr>
+    <td>price</td>
+    <td>float64</td>
+    <td>Harga dari sebuah product</td>
+    <td>Setiap baris merepresentasikan harga dari sebuah product yang diorder oleh customer</td>
+  </tr>
+  <tr>
+    <td>payment_sequential</td>
+    <td>float64</td>
+    <td>Jumlah payment method</td>
+    <td>Setiap baris merepresentasikan jumlah metode payment yang dilakukan oleh customer. Customer dapat membayar sebuah transaksi lebih dari 1 metode</td>
+  </tr>
+  <tr>
+    <td>payment_type</td>
+    <td>object</td>
+    <td>Metode pembayaran</td>
+    <td>Setiap baris merepresentasikan metode yang digunakan customer dalam membayar sebuah transaksi</td>
+  </tr>
+  <tr>
+    <td>payment_value</td>
+    <td>float64</td>
+    <td>Nilai Transaksi</td>
+    <td>Setiap baris merepresentasikan nilai transaksi yang harus dibayar customer</td>
+  </tr>
+  <tr>
+    <td>review_score</td>
+    <td>float64</td>
+    <td>Tingkat kepuasan customer</td>
+    <td>Setiap baris merepresentasikan tingkat kepuasan customer dalam bertransaksi, nilainya dari 1 - 5</td>
+  </tr>
+  <tr>
+    <td>customer_unique_id</td>
+    <td>object</td>
+    <td>Unik ID dari customer</td>
+    <td>Setiap baris merepresentasikan ID customer yang melakukan
+    order</td>
+  </tr>
+  <tr>
+    <td>product_category_name_english</td>
+    <td>object</td>
+    <td>Kategori product</td>
+    <td>Setiap baris merepresentasikan nama kategori dari sebuah product dalam Bahasa Inggris</td>
+  </tr>
+  <tr>
+    <td>month_order</td>
+    <td>object</td>
+    <td>Nama bulan order dilakukan</td>
+    <td>Setiap baris merepresentasikan nama bulan dari tanggal pembelian dilakukan</td>
+  </tr>
+  <tr>
+    <td>weekday_order</td>
+    <td>object</td>
+    <td>Nama hari order dilakukan</td>
+    <td>Setiap baris merepresentasikan nama hari dari tanggal pembelian dilakukan</td>
+  </tr>
+  <tr>
+    <td>month_year_order</td>
+    <td>period[M]</td>
+    <td>Tahun dan bulan pembelian</td>
+    <td>Setiap baris merepresentasikan tahun dan bulan dari tanggal pembelian dilakukan</td>
+  </tr>
+</table>
 
 Here's some **bold** text.
 
