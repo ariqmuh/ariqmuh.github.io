@@ -3,16 +3,16 @@ title: "Customer Segmentation based on Customer Behaviour"
 date: 2021-10-21
 tags: [data manipulation, data visualization, data science, clustering]
 header:
-excerpt: "Data Manipulation, Data VisualizationData Science, Clustering"
+excerpt: "Data Manipulation, Data Visualization, Data Science, Clustering"
 mathjax: "true"
 ---
-![Customer Segmentation](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/Olist%20(2).png)
+<p><img src="https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/Olist%20(2).png" alt="Customer Segmentation"><p/>
 <p>Full Documentation: <a href="https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/">Click Here</a><p/>
 
-## Project Description 
+## 1. Project Description 
 <p>This project uses e-commerce transaction data taken from Kaggle. This project aims to analyze customer segmentation based on customer transaction behaviou. The models used in this project are the RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, and Gaussian Clustering.</p>
 
-## Background 
+## 2. Background 
 <p><img src="https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/e-commerce%20user%20in%20brazil%20(1).png" alt="E-commerce Users in Brazil"></p>
 <p>In today's technological era, the e-commerce business is a common thing that can be found. *E-commerce* itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.</p>
 
@@ -20,10 +20,13 @@ mathjax: "true"
 
 <p>To overcome this, one way that can be done is to segment customers or what is commonly referred to as Customer Segmentation. Customer Segmentation helps marketplace owners to group customers with similar characteristics. By using Customer Segmentation, companies can effectively conduct marketing campaigns so that user transactions and user loyalty can increase. According to a survey conducted by Researchscape and Evergage in 2020, 99% of marketers agree that personalization helps strengthen customer relationships and 78% of those results claim that the impact is powerful.</p>
 
-## Data Understanding
+## 3. Data Understanding
 <p>This data was taken from 2016 to 2018 and publicly distributed on Kaggle in September 2018. The existing data contains customer and seller transactions. To solve this problem, we only need data related to customer transactions because what we want to do is customer segmentation, which is useful for knowing a customer's behavior in a transaction.</p>
 
-![Data Scheme](https://i.imgur.com/HRhd2Y0.png)
+<p><img src="https://i.imgur.com/HRhd2Y0.png" alt="Data Scheme"><p/>
+
+
+
 Here's some **bold** text.
 
 What about a [link](https://github.com/dataoptimal)?
