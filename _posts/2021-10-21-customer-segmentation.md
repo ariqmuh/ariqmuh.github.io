@@ -11,11 +11,11 @@ mathjax: "true"
 ## 1. Project Description 
 <p>This project uses e-commerce transaction data taken from Kaggle. This project aims to analyze customer segmentation based on customer transaction behaviou. The models used in this project are the RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, and Gaussian Clustering.</p>
 <p>Full Documentation: <a href="https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/">Click Here</a><p/>
-<p><img src="https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/Olist%20(2).png" alt="Customer Segmentation"><p/>
+<p><img src="https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/Olist.png"><p/>
 
 
 ## 2. Background 
-<p><img src="https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/e-commerce%20user%20in%20brazil%20(1).png" alt="E-commerce Users in Brazil"></p>
+<p><img src="https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/e-commerce%20user%20in%20brazil%20(1).png" alt="E-commerce Users in Brazil"></p>
 <p>In today's technological era, the e-commerce business is a common thing that can be found. *E-commerce* itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.</p>
 
 <p>Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a Marketing Campaign, such as giving discounts, copywriting, etc. In general, companies prepare a budget of 5% -12% of the total revenue they get to carry out marketing campaigns. However, the problem is that the marketing campaign that is carried out is not right on target, so the company suffers a loss. A marketing campaign can be successfully measured by how many new users it manages to get and how many old users it retains to keep using the marketplace.</p>
