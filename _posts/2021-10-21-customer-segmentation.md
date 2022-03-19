@@ -10,11 +10,11 @@ mathjax: "true"
 # • Project Description 
 This project uses e-commerce transaction data taken from Kaggle. This project aims to analyze customer segmentation based on customer transaction behaviou. The models used in this project are the RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, and Gaussian Clustering.  
 Full Documentation: [Customer Segmentation](https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/)  
-![Olist](https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/Olist.png)
+![Olist]({{ site.url }}{{ site.baseurl }}/images/cover.JPG)
 
 # • Background 
-![E-commerce Users in Brazil](https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/e-commerce%20user%20in%20brazil%20(1).png)  
-In today's technological era, the e-commerce business is a common thing that can be found. *E-commerce* itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.  
+![E-commerce Users in Brazil]({{ site.url }}{{ site.baseurl }}/images/statistic.JPG)  
+In today's technological era, the e-commerce business is a common thing that can be found. E-commerce itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.  
 
 Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a Marketing Campaign, such as giving discounts, copywriting, etc. In general, companies prepare a budget of 5% -12% of the total revenue they get to carry out marketing campaigns. However, the problem is that the marketing campaign that is carried out is not right on target, so the company suffers a loss. A marketing campaign can be successfully measured by how many new users it manages to get and how many old users it retains to keep using the marketplace.  
 
@@ -25,6 +25,10 @@ This data was taken from 2016 to 2018 and publicly distributed on Kaggle in Sept
 
 ![Data Scheme]({{ site.url }}{{ site.baseurl }}/images/data_scheme.JPG)  
 
+# • Business Problem :
+
+1. How to segment the customers at Olist marketplace so we can divide customers based on their shopping behaviour?
+2. What kind of treatment for each cluster to increase retention rate customer?
 
 # • Model
 In this section, we use Recency, Frequency, and Monetary from customers. These three things can describe the transaction behavior of a customer. The meaning of RFM itself is:  
