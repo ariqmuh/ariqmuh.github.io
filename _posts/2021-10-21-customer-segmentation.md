@@ -18,8 +18,9 @@ Full Documentation: [Customer Segmentation using RFM and K-Means Clustering](htt
  
     
 In today's technological era, the e-commerce business is a common thing that can be found. E-commerce itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.   
+    
 ![E-commerce Users in Brazil]({{ site.url }}{{ site.baseurl }}/images/statistic.JPG)    
-
+    
 Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a **marketing campaign**, such as giving discounts, copywriting, etc.    
 In general, companies prepare a budget of 5% - 12% of the total revenue to carry out marketing campaigns. However, the problem is that the marketing campaign carried out is not right on target, so the company suffers a loss. A marketing campaign can be measured by how many new users manage to get and how many old users retain to keep using the marketplace.         
 One way that can be done is to segment customers or what is commonly referred to as **Customer Segmentation**. Customer Segmentation helps marketplace owners to group customers with similar characteristics. By using Customer Segmentation, companies can effectively conduct marketing campaigns so that user transactions and user loyalty can increase. According to a survey conducted by Researchscape and Evergage in 2020, 99% of marketers agree that personalization helps strengthen customer relationships and 78% of those results claim that the impact is powerful.    
@@ -64,9 +65,32 @@ df_olist = pd.merge(df_olist, olist_translate, on='product_category_name', how='
 ## 2. Data Cleaning and Data Pre-processing
 ```python
 # Drop Unused Columns
-df_olist_clean = df_olist.drop(columns=['order_status', 'order_approved_at', 'order_delivered_customer_date', 'order_delivered_carrier_date','order_delivered_customer_date', 'order_estimated_delivery_date', 'seller_id', 'shipping_limit_date','product_category_name', 'product_name_lenght', 'product_description_lenght', 'product_weight_g', 'product_length_cm', 'product_height_cm', 'product_width_cm', 'payment_installments','review_id', 'review_comment_title', 'review_comment_message', 'review_creation_date', 'review_answer_timestamp', 'customer_id', 'customer_city', 'customer_state', 'product_photos_qty', 'freight_value', 'payment_sequential'])
+df_olist_clean = df_olist.drop(columns=['order_status', 'order_approved_at', 
+'order_delivered_customer_date', 'order_delivered_carrier_date','order_delivered_customer_date', 
+'order_estimated_delivery_date', 'seller_id', 'shipping_limit_date','product_category_name', 
+'product_name_lenght', 'product_description_lenght', 'product_weight_g', 'product_length_cm', 
+'product_height_cm', 'product_width_cm', 'payment_installments','review_id', 'review_comment_title', 
+'review_comment_message', 'review_creation_date', 'review_answer_timestamp', 'customer_id', 
+'customer_city', 'customer_state', 'product_photos_qty', 'freight_value', 'payment_sequential'])
+
 # Drop Missing Values
 df_olist_clean.dropna(inplace = True)
+df_olist_clean.isnull().sum()
+'''
+order_id                         0
+order_purchase_timestamp         0
+order_item_id                    0
+product_id                       0
+price                            0
+payment_type                     0
+payment_value                    0
+review_score                     0
+customer_unique_id               0
+customer_zip_code_prefix         0
+product_category_name_english    0
+dtype: int64
+
+'''python
 # Drop Duplicate Values
 df_olist_clean = df_olist_clean.drop_duplicates()
 # Handling Inconsistent Variable
@@ -79,9 +103,11 @@ def format_val(x):
     return "home_comfort"
   return x
 df_olist_clean['product_category_name_english'] = df_olist_clean['product_category_name_english'].apply(format_val)
+
 # Casting Datatype
 df_olist_clean['order_purchase_timestamp'] = pd.to_datetime(df_olist_clean['order_purchase_timestamp'])
 df_olist_clean['order_purchase_timestamp'].dt.strftime('%Y-%m-%d')
+
 # Create New Columns
 df_olist_clean['month_order'] = df_olist_clean['order_purchase_timestamp'].dt.month_name()
 df_olist_clean['weekday_order'] = df_olist_clean['order_purchase_timestamp'].dt.day_name()
@@ -90,6 +116,7 @@ df_olist_clean['date_order'] = df_olist_clean['order_purchase_timestamp'].dt.day
 ```
 
 # 3. Exploratory Data Analysis (EDA)
+
 
 4. Modeling (K-Means Clustering using RFM)
 5. Conclusion
