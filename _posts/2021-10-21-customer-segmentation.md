@@ -7,36 +7,33 @@ excerpt: "Data Manipulation, Data Visualization, Data Science, Clustering"
 mathjax: "true"
 ---
 
+# • Project Description 
+This project uses e-commerce transaction data taken from Kaggle. This project aims to analyze customer segmentation based on customer transaction behaviou. The models used in this project are the RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, and Gaussian Clustering.
+Full Documentation: [Customer Segmentation](https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/)
+![Olist](https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/Olist.png)
 
-## 1. Project Description 
-<p>This project uses e-commerce transaction data taken from Kaggle. This project aims to analyze customer segmentation based on customer transaction behaviou. The models used in this project are the RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, and Gaussian Clustering.</p>
-<p>Full Documentation: <a href="https://github.com/ariqmuh/DataWarrior_JC_DS_VL_01_FinalProject/">Click Here</a><p/>
-<p><img src="https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/Olist.png"><p/>
+# • Background 
+![E-commerce Users in Brazil](https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/e-commerce%20user%20in%20brazil%20(1).png)
+In today's technological era, the e-commerce business is a common thing that can be found. *E-commerce* itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.</p>
+
+Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a Marketing Campaign, such as giving discounts, copywriting, etc. In general, companies prepare a budget of 5% -12% of the total revenue they get to carry out marketing campaigns. However, the problem is that the marketing campaign that is carried out is not right on target, so the company suffers a loss. A marketing campaign can be successfully measured by how many new users it manages to get and how many old users it retains to keep using the marketplace.
+
+To overcome this, one way that can be done is to segment customers or what is commonly referred to as Customer Segmentation. Customer Segmentation helps marketplace owners to group customers with similar characteristics. By using Customer Segmentation, companies can effectively conduct marketing campaigns so that user transactions and user loyalty can increase. According to a survey conducted by Researchscape and Evergage in 2020, 99% of marketers agree that personalization helps strengthen customer relationships and 78% of those results claim that the impact is powerful.
+
+# • Data Understanding
+This data was taken from 2016 to 2018 and publicly distributed on Kaggle in September 2018. The existing data contains customer and seller transactions. To solve this problem, we only need data related to customer transactions because what we want to do is customer segmentation, which is useful for knowing a customer's behavior in a transaction.
+
+![Data Scheme]({{ site.url }}{{ site.baseurl }}/images/data_scheme.jpg)
 
 
-## 2. Background 
-<p><img src="https://github.com/ariqmuh/ariqmuh.github.io/blob/master/images/e-commerce%20user%20in%20brazil%20(1).png" alt="E-commerce Users in Brazil"></p>
-<p>In today's technological era, the e-commerce business is a common thing that can be found. *E-commerce* itself is a business model that allows a company or individual to buy or sell their products via the internet. E-commerce users from year to year also increase, especially in Brazil. The following is the data of E-commerce users from 2017 to 2025.</p>
+# • Model
+In this section, we use Recency, Frequency, and Monetary from customers. These three things can describe the transaction behavior of a customer. The meaning of RFM itself is:
 
-<p>Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a Marketing Campaign, such as giving discounts, copywriting, etc. In general, companies prepare a budget of 5% -12% of the total revenue they get to carry out marketing campaigns. However, the problem is that the marketing campaign that is carried out is not right on target, so the company suffers a loss. A marketing campaign can be successfully measured by how many new users it manages to get and how many old users it retains to keep using the marketplace.</p>
+- Recency: The last time a customer made a purchase
+- Frequency: Number of transactions
+- Monetary: The spending power of a customer
 
-<p>To overcome this, one way that can be done is to segment customers or what is commonly referred to as Customer Segmentation. Customer Segmentation helps marketplace owners to group customers with similar characteristics. By using Customer Segmentation, companies can effectively conduct marketing campaigns so that user transactions and user loyalty can increase. According to a survey conducted by Researchscape and Evergage in 2020, 99% of marketers agree that personalization helps strengthen customer relationships and 78% of those results claim that the impact is powerful.</p>
-
-## 3. Data Understanding
-<p>This data was taken from 2016 to 2018 and publicly distributed on Kaggle in September 2018. The existing data contains customer and seller transactions. To solve this problem, we only need data related to customer transactions because what we want to do is customer segmentation, which is useful for knowing a customer's behavior in a transaction.</p>
-
-<p><img src="https://i.imgur.com/HRhd2Y0.png" alt="Data Scheme"><p/>
-
-## 4. Model
-<p>In this section, we use Recency, Frequency, and Monetary from customers. These three things can describe the transaction behavior of a customer. The meaning of RFM itself is:</p>
-<ul>
-<li>Recency: The last time a customer made a purchase</li>
-<li>Frequency: Number of transactions</li>
-<li>Monetary: The spending power of a customer</li>
-</ul>
-
-<p>The model we tried had three models, namely RFM Segmentation, K-Means, and Gaussian Models</p>
-
+The model we tried had three models, namely RFM Segmentation, K-Means, and Gaussian Models
 
 Here's some **bold** text.
 
