@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Muhammad Ariq Budipraja"
-  avatar           : "assets/images/A_Order%2014%20HD%20JPG.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "images/A_Order%2014%20HD%20JPG.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Portfolio"
   location         : "South Tangerang, Indonesia"
   email            : "ariqbudipraja@gmail.com"
