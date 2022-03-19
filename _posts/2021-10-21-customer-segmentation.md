@@ -12,6 +12,8 @@ In this project, I put myself as a part of the Data Scientist Team of Olist, e-c
 
 Full Documentation: [Customer Segmentation using RFM and K-Means Clustering](https://github.com/ariqmuh/Portfolios/tree/main/Customer_Segmentation_using_RFM_and_KMeans_Clustering)   
 
+---
+
 # • Background 
  
     
@@ -21,6 +23,8 @@ In today's technological era, the e-commerce business is a common thing that can
 Revenue from the marketplace business model can come from paid features, advertisements, payment gateways, and partnerships. The point is that the more users or traffic on a marketplace, the more revenue you will get. One way to increase users or traffic on a marketplace is to do a **marketing campaign**, such as giving discounts, copywriting, etc.    
 In general, companies prepare a budget of 5% - 12% of the total revenue to carry out marketing campaigns. However, the problem is that the marketing campaign carried out is not right on target, so the company suffers a loss. A marketing campaign can be measured by how many new users manage to get and how many old users retain to keep using the marketplace.         
 One way that can be done is to segment customers or what is commonly referred to as **Customer Segmentation**. Customer Segmentation helps marketplace owners to group customers with similar characteristics. By using Customer Segmentation, companies can effectively conduct marketing campaigns so that user transactions and user loyalty can increase. According to a survey conducted by Researchscape and Evergage in 2020, 99% of marketers agree that personalization helps strengthen customer relationships and 78% of those results claim that the impact is powerful.    
+
+---
     
 # • Data Understanding
 This data was taken from 2016 to 2018 and publicly distributed on Kaggle in September 2018. The existing data contains customer and seller transactions. To solve this problem, we only need data related to customer transactions because what we want to do is customer segmentation, which is useful for knowing a customer's behavior in a transaction.  
@@ -28,10 +32,14 @@ This data was taken from 2016 to 2018 and publicly distributed on Kaggle in Sept
 Dataset Source : [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce)     
 ![Data Scheme]({{ site.url }}{{ site.baseurl }}/images/data_scheme.JPG)  
 
+---
+
 # • Business Problem :
 
 1. How to segment the customers at Olist marketplace so we can divide customers based on their shopping behaviour?
 2. What kind of treatment for each cluster to increase customer retention rate?
+
+---
 
 # • Workflow:
 ## 1. Data Merging
