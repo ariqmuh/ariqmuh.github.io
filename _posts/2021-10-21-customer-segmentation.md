@@ -45,13 +45,13 @@ Dataset Source : [Brazilian E-Commerce Public Dataset by Olist](https://www.kagg
 ## 1. Data Merging
 ```python
 # Import Dataset
-olist_order = pd.read_csv(Dataset\olist_orders_dataset.csv')
-olist_item = pd.read_csv(Dataset\olist_order_items_dataset.csv')
-olist_payment = pd.read_csv(Dataset\olist_order_payments_dataset.csv')
-olist_product = pd.read_csv(Dataset\olist_products_dataset.csv')
-olist_customer = pd.read_csv(Dataset\olist_customers_dataset.csv')
-olist_review = pd.read_csv(Dataset\olist_order_reviews_dataset.csv')
-olist_translate = pd.read_csv(Dataset\product_category_name_translation.csv')
+olist_order = pd.read_csv('Dataset\olist_orders_dataset.csv')
+olist_item = pd.read_csv('Dataset\olist_order_items_dataset.csv')
+olist_payment = pd.read_csv('Dataset\olist_order_payments_dataset.csv')
+olist_product = pd.read_csv('Dataset\olist_products_dataset.csv')
+olist_customer = pd.read_csv('Dataset\olist_customers_dataset.csv')
+olist_review = pd.read_csv('Dataset\olist_order_reviews_dataset.csv')
+olist_translate = pd.read_csv('Dataset\product_category_name_translation.csv')
 # Merge Dataset
 df_olist = pd.merge(olist_order, olist_item, on='order_id', how='left')
 df_olist = pd.merge(df_olist, olist_product, on='product_id', how='inner')
